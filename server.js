@@ -23,7 +23,7 @@ const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || 'onboarding@resend.dev';
 // Allow the GitHub Pages frontend to call this API cross-origin.
 // Update ALLOWED_ORIGIN below to match your actual GitHub Pages URL exactly
 // (no trailing slash), e.g. 'https://mrobottt.github.io'.
-const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || 'https://BendjaferHichem.github.io';
+const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || 'https://bendjaferhichem.github.io';
 
 app.use(cors({
   origin: ALLOWED_ORIGIN,
