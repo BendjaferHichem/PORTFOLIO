@@ -7,7 +7,7 @@
   // Backend is deployed separately on Render (different origin from GitHub Pages),
   // so the contact form needs the full URL instead of a relative path.
   // Replace this with your actual Render service URL.
-  const API_BASE_URL = 'https://your-app.onrender.com';
+  const API_BASE_URL = 'https://https://portfolio-kdaz.onrender.com';
 
   /* ============================================
      Preloader
