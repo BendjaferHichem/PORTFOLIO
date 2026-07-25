@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bendjafer Hichem — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Bendjafer Hichem, full-stack web developer. Projects, tech stack, experience and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-content">
+    <span class="preloader-bracket">&lt;</span>
+    <span class="preloader-text" id="preloaderText">BH</span>
+    <span class="preloader-bracket">/&gt;</span>
+  </div>
+  <div class="preloader-log" id="preloaderLog">Loading Portfolio<span class="dots"><span>.</span><span>.</span><span>.</span></span></div>
+</div>
+
+<!-- Custom cursor (desktop only) -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Nav -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav container">
+    <a href="#home" class="logo" data-cursor="link">
+      <span class="logo-bracket">&lt;</span>BH<span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home"><span class="nav-index">Home</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects"><span class="nav-index">Work</a></li>
+      <li><a href="#about" class="nav-link" data-section="about"><span class="nav-index">About</a></li>
+      <li><a href="#stack" class="nav-link" data-section="stack"><span class="nav-index">Stack</a></li>
+      <li><a href="#journey" class="nav-link" data-section="journey"><span class="nav-index">Journey</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact"><span class="nav-index">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow reveal-line"><span class="eyebrow-dot"></span>// full-stack developer</p>
+        <h1 class="hero-title">
+          <span class="reveal-line hero-title-line">Bendjafer</span>
+          <span class="reveal-line hero-title-line hero-title-accent">Hichem</span>
+        </h1>
+        <p class="hero-role reveal-line">
+          I build <span class="role-cycle" id="roleCycle">interfaces that feel alive</span>
+        </p>
+        <p class="hero-desc reveal-line">
+          A full-stack web developer who ships from database schema to pixel-perfect UI,
+          currently based in Algeria, working with teams around the world to turn
+          ideas into fast, reliable products.
+        </p>
+        <div class="hero-actions reveal-line">
+          <a href="#projects" class="btn btn-primary">
+            <span>View my work</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Get in touch</span>
+          </a>
+        </div>
+
+        <div class="hero-meta reveal-line">
+          <div class="hero-meta-item">
+            <span class="hero-meta-num" data-count="1">0</span><span class="hero-meta-suffix">+</span>
+            <span class="hero-meta-label">years building</span>
+          </div>
+          <div class="hero-meta-sep"></div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-num" data-count="6">0</span><span class="hero-meta-suffix">+</span>
+            <span class="hero-meta-label">projects shipped</span>
+          </div>
+          <div class="hero-meta-sep"></div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-num" data-count="6">0</span><span class="hero-meta-suffix">+</span>
+            <span class="hero-meta-label">happy clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual">
+        <div class="poly-cluster" id="polyCluster">
+
+          <div class="poly-float stack-float-1">
+            <div class="stack-card stack-card-1">
+              <div class="stack-card-head">
+                <span class="stack-dot"></span><span class="stack-dot"></span><span class="stack-dot"></span>
+              </div>
+              <div class="stack-card-lines">
+                <span class="stack-line" style="width:78%"></span>
+                <span class="stack-line" style="width:52%"></span>
+                <span class="stack-line" style="width:64%"></span>
+              </div>
+              <span class="stack-card-tag">ui</span>
+            </div>
+          </div>
+
+          <div class="poly-float stack-float-2">
+            <div class="stack-card stack-card-2">
+              <div class="stack-card-head">
+                <span class="stack-dot"></span><span class="stack-dot"></span><span class="stack-dot"></span>
+              </div>
+              <div class="stack-card-lines">
+                <span class="stack-line" style="width:60%"></span>
+                <span class="stack-line" style="width:82%"></span>
+                <span class="stack-line" style="width:44%"></span>
+              </div>
+              <span class="stack-card-tag">api</span>
+            </div>
+          </div>
+
+          <div class="poly-float stack-float-3">
+            <div class="stack-card stack-card-3">
+              <div class="stack-card-head">
+                <span class="stack-dot"></span><span class="stack-dot"></span><span class="stack-dot"></span>
+              </div>
+              <div class="stack-card-lines">
+                <span class="stack-line" style="width:70%"></span>
+                <span class="stack-line" style="width:38%"></span>
+                <span class="stack-line" style="width:56%"></span>
+              </div>
+              <span class="stack-card-tag">data base</span>
+            </div>
+          </div>
+
+          <div class="poly-float stack-float-4">
+            <div class="stack-card stack-card-4">
+              <div class="stack-card-head">
+                <span class="stack-dot"></span><span class="stack-dot"></span><span class="stack-dot"></span>
+              </div>
+              <div class="stack-card-lines">
+                <span class="stack-line" style="width:66%"></span>
+                <span class="stack-line" style="width:48%"></span>
+              </div>
+              <span class="stack-card-tag">deploy</span>
+            </div>
+          </div>
+
+          <div class="poly-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#projects" class="scroll-cue" aria-label="Scroll to projects">
+      <span class="scroll-cue-label">scroll</span>
+      <span class="scroll-cue-line"><span class="scroll-cue-dot"></span></span>
+    </a>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <p class="section-eyebrow">// — selected work</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A handful of products I designed, built and shipped end to end, from data model to deployment.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card reveal-up" data-tilt>
+          <div class="project-media" style="--card-a:#4de8c9; --card-b:#0a0e14;">
+            <img class="project-media-img" src="hichem-estate.png" alt="" loading="lazy" onerror="this.style.display='none'">
+            <div class="project-media-grid"></div>
+            <span class="project-media-tag">Real Estate</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3 class="project-title">HichemEstate</h3>
+              <div class="project-links">
+                <a href="https://BendjaferHichem.github.io/real-etstae/" aria-label="Live demo" class="icon-link">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                
+              </div>
+            </div>
+            <p class="project-desc">A real-estate platform for browsing, listing and managing property sales and rentals, with map-based search, filters and an agent dashboard.</p>
+            <ul class="project-tags">
+              <li>Java script</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-tilt>
+          <div class="project-media" style="--card-a:#7c6cff; --card-b:#0a0e14;">
+            <img class="project-media-img" src="one-ai.png" alt="" loading="lazy" onerror="this.style.display='none'">
+            <div class="project-media-grid"></div>
+            <span class="project-media-tag">AI Tool</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3 class="project-title">oneAI</h3>
+              <div class="project-links">
+                <a href="https://BendjaferHichem.github.io/pdf-to-bullet-points-vol2/" aria-label="Live demo" class="icon-link">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                
+              </div>
+            </div>
+            <p class="project-desc">An AI tool that turns long PDF documents into clean, structured bullet-point summaries in seconds, so people can skim what matters.</p>
+            <ul class="project-tags">
+              <li>Java script</li><li>Node.js</li><li>groq.API</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-tilt>
+          <div class="project-media" style="--card-a:#ff9f6b; --card-b:#0a0e14;">
+            <img class="project-media-img" src="auto-cv-builder.png" alt="" loading="lazy" onerror="this.style.display='none'">
+            <div class="project-media-grid"></div>
+            <span class="project-media-tag">AI Tool</span>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3 class="project-title">Auto CV Builder</h3>
+              <div class="project-links">
+                <a href="https://BendjaferHichem.github.io/AI-resume-maker/" aria-label="Live demo" class="icon-link">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                
+              </div>
+            </div>
+            <p class="project-desc">An AI-powered CV builder that turns a short profile into a polished, ATS-friendly resume, auto-formatted and exportable as a PDF.</p>
+            <ul class="project-tags">
+              <li>Java script</li><li>Node.js</li><li>groq API</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="project-race-cta reveal-up">
+        <a href="race.html" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2 9.5 3.5 4h9L14 9.5M2 9.5v3a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h6v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-3M2 9.5h12M5 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Race
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-visual reveal-up">
+        <div class="about-frame">
+          <div class="about-photo">
+            <img class="about-photo-img" src="profile.jpg" alt="Bendjafer Hichem" loading="lazy" onerror="this.style.display='none'">
+            <span aria-hidden="true">BH</span>
+          </div>
+          <div class="about-frame-tag">based in Algeria</div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <p class="section-eyebrow reveal-up">// — about me</p>
+        <h2 class="section-title reveal-up">I like turning complex problems into useful interfaces.</h2>
+        <p class="about-text reveal-up">
+          I'm Hichem, a full-stack developer who enjoys the whole journey of a product:
+          shaping the data model, wiring up a reliable API, and then polishing the last
+          pixel of the interface that sits on top of it. I care about performance,
+          readable code, and building things that are still easy to maintain a million years later.
+        </p>
+        <p class="about-text reveal-up">
+          Outside of client work, I spend my time bettering myself and evolving into a more reliable programmer.
+        </p>
+
+        <div class="about-stats reveal-up">
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span><span class="hero-meta-suffix">+</span>
+            <p class="stat-label">Projects delivered</p>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="100">0</span><span class="hero-meta-suffix">%</span>
+            <p class="stat-label">Client satisfaction</p>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="320">0</span><span class="hero-meta-suffix">+</span>
+            <p class="stat-label">Commits this year</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <p class="section-eyebrow">// — tools of the trade</p>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-desc">The layers I reach are diverse, which makes me a capable developer in the realm of fullstack.</p>
+      </div>
+
+      <div class="stack-columns">
+
+        <div class="stack-col reveal-up">
+          <h3 class="stack-col-title"><span class="stack-col-index"></span>Frontend</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://images.seeklogo.com/logo-png/33/1/javascript-logo-png_seeklogo-330541.png" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <span class="skill-bar"><span style="--level:95%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/960px-Typescript_logo_2020.svg.png" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">TypeScript</span>
+              </div>
+              <span class="skill-bar"><span style="--level:80%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://www.svgrepo.com/show/327388/logo-react.svg" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">React</span>
+              </div>
+              <span class="skill-bar"><span style="--level:92%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://pngdownload.io/wp-content/uploads/2023/12/HTML5-Logo-PNG-Symbol-for-Web-Development-Transparent-jpg.webp" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">HTML5</span>
+              </div>
+              <span class="skill-bar"><span style="--level:96%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">CSS3</span>
+              </div>
+              <span class="skill-bar"><span style="--level:94%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stack-col reveal-up">
+          <h3 class="stack-col-title"><span class="stack-col-index"></span>Backend</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://www.svgrepo.com/show/354119/nodejs-icon.svg" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Node.js</span>
+              </div>
+              <span class="skill-bar"><span style="--level:93%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://logowik.com/content/uploads/images/express-js1720895488.logowik.com.webp" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Express</span>
+              </div>
+              <span class="skill-bar"><span style="--level:88%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://images.seeklogo.com/logo-png/33/1/javascript-logo-png_seeklogo-330541.png" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Java script</span>
+              </div>
+              <span class="skill-bar"><span style="--level:70%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">NestJS</span>
+              </div>
+              <span class="skill-bar"><span style="--level:75%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stack-col reveal-up">
+          <h3 class="stack-col-title"><span class="stack-col-index"></span>Database</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+              <span class="skill-bar"><span style="--level:50%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://images.seeklogo.com/logo-png/48/1/mongodb-logo-png_seeklogo-481256.png" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">MongoDB</span>
+              </div>
+              <span class="skill-bar"><span style="--level:50%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5CCHqxrzlmf8cfFCZoqiyrEI8cmql4DdpF1mEVMSVAVCnhHOKwNURjjs&s=10" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Redis</span>
+              </div>
+              <span class="skill-bar"><span style="--level:50%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPJ2IDz3rtx7pVXKfAdO1YOIU-oYI3zNsczms_pwefrLO4mFV0GgpUZhmY&s=10" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Firebase</span>
+              </div>
+              <span class="skill-bar"><span style="--level:55%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stack-col reveal-up">
+          <h3 class="stack-col-title"><span class="stack-col-index"></span>Tools &amp; DevOps</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4u5WnDuaIaHQXNLdhAlNZnGAVGA4_CXDwoNp4ZPaI6ejEQi43m5s9Tdc&s=10" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Git &amp; GitHub</span>
+              </div>
+              <span class="skill-bar"><span style="--level:97%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjD95ZR-DTM0odnOJa2W2y5stUXx1AYta8pMiQZVVsd6regGnpp6uKK9U&s=10" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Docker</span>
+              </div>
+              <span class="skill-bar"><span style="--level:75%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://explore-feed.github.com/topics/actions/actions.png" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">GitHub Actions</span>
+              </div>
+              <span class="skill-bar"><span style="--level:80%"></span></span>
+            </li>
+            <li class="skill-item">
+              <div class="skill-head">
+                <span class="skill-icon"><img src="https://brandlogos.net/wp-content/uploads/2022/05/figma-logo_brandlogos.net_6n1pb-512x512.png" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></span>
+                <span class="skill-name">Figma</span>
+              </div>
+              <span class="skill-bar"><span style="--level:70%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="journey" id="journey">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <p class="section-eyebrow">// — how I got here</p>
+        <h2 class="section-title">Experience &amp; Learning Journey</h2>
+        <p class="section-desc">The build log. a running record of projects and things I picked up along the way.</p>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline-track">
+          <div class="timeline-fill" id="timelineFill"></div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025 — Present</span>
+            <h3 class="timeline-title">Full-Stack Developer, Freelance</h3>
+            <p class="timeline-org">Remote — working with startups across MENA &amp; Europe</p>
+            <p class="timeline-desc">Designing and building complete web products for early-stage startups, from architecture decisions to shipping v1 with paying customers.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">Frontend Developer</h3>
+            <p class="timeline-org">Algiers, Algeria</p>
+            <p class="timeline-desc">Led the rebuild of the flagship dashboard of a online business in React, cutting load time by 40% and introducing a shared component library.</p>
+          </div>
+        </div>
+
+        
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025 - present</span>
+            <h3 class="timeline-title">ST Computer Science</h3>
+            <p class="timeline-org">affroun, Blida</p>
+            <p class="timeline-desc">Focused on developing my software engineering skills and handling databases to provide a service as good as advertised, all while building side projects that slowly became this portfolio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-grid-bg" aria-hidden="true"></div>
+    <div class="container contact-inner">
+      <div class="section-head reveal-up">
+        <p class="section-eyebrow">// — reach out</p>
+        <h2 class="section-title">Let's build something together.</h2>
+        <p class="section-desc">Have a project in mind, or just want to talk shop? My inbox is open.</p>
+      </div>
+
+      <div class="contact-body">
+        <form class="contact-form reveal-up" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <span class="form-error">Please enter your name.</span>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <span class="form-error">Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error">Please write a short message.</span>
+          </div>
+          <div class="form-field form-field-honeypot" aria-hidden="true">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <span id="submitLabel">Send message</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-success" id="formSuccess">Message sent — thanks! I'll get back to you within a day or two.</p>
+          <p class="form-server-error" id="formServerError"></p>
+        </form>
+
+        <div class="contact-side reveal-up">
+          <a class="contact-email">
+            hichembendjafer2018@gmail.com
+          </a>
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/mrobottt" class="social-link">
+                <span>GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/hichem-bendjafer-407a63345/" class="social-link">
+                <span>LinkedIn</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bnjfrhichem/" class="social-link">
+                <span>Instagram</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Bendjafer Hichem. All rights reserved.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
